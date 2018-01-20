@@ -20,7 +20,7 @@ class UEditor extends Field
         UE.delEditor('$this->id');
         var ue_$this->id = UE.getEditor('$this->id');
         ue_$this->id.ready(function () {
-            ue.execCommand('serverparam', '_token', '{{ csrf_token() }}');
+            ue_$this->id.execCommand('serverparam', '_token', '{{ csrf_token() }}');
         });
 EOT;
         return parent::render();
